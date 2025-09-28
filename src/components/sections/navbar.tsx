@@ -61,11 +61,11 @@ export function Navbar() {
           >
             <div className="h-8 w-8 rounded-md bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">
-                {siteConfig.author.split(' ').map(n => n[0]).join('')}
+                {siteConfig.siteName.split(' ').map(n => n[0]).join('')}
               </span>
             </div>
             <span className="hidden sm:block font-semibold text-foreground">
-              {siteConfig.author}
+              {siteConfig.siteName}
             </span>
           </motion.div>
         </Link>
