@@ -68,12 +68,12 @@ export function HeroSection() {
               size="lg"
               className="group relative overflow-hidden bg-primary text-white dark:bg-white dark:text-black px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold shadow-xl hover:shadow-2xl transition-all duration-300 w-full sm:w-auto"
             >
-              <Link href='/projects'>
+              {/* <Link href='/projects'>
                 <Zap className="mr-2 h-4 w-4 transition-transform group-hover:scale-110 text-white dark:text-black" />
                 View Projects
 
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 text-white dark:text-black" />
-              </Link>
+              </Link> */}
             </Button>
             <Button
               asChild
