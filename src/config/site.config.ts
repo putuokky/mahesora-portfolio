@@ -87,7 +87,7 @@ export const siteConfig: SiteConfig = {
     github: 'https://github.com/putuokky',
     linkedin: 'https://www.linkedin.com/in/okkymahesora/',
     tips: 'https://pay.muhammadfiaz.com',
-    email: 'mailto:admin@mahesora.id',
+    email: 'mailto:okkymahes@gmail.com',
   },
   social: [
     { label: 'Facebook', url: 'https://www.facebook.com/okkymahesora', icon: 'facebook' },
