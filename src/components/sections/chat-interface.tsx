@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 import { useSession } from '@/lib/auth-client';
+import { siteConfig } from '@/config/site.config';
 
 
 
@@ -140,7 +141,7 @@ export function ChatInterface() {
               You can also reach out to me directly via email for more formal inquiries.
             </p>
             <Button asChild variant="outline" size="sm">
-              <Link href="mailto:contact@muhammadfiaz.com">
+              <Link href={siteConfig.links.email}>
                 Send Email
               </Link>
             </Button>

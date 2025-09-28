@@ -3,6 +3,7 @@
 import { motion } from 'motion/react';
 import { Badge } from '@/components/ui/badge';
 import { User } from 'lucide-react';
+import { siteConfig } from '@/config/site.config';
 
 export function AboutHeader() {
   return (
@@ -17,9 +18,8 @@ export function AboutHeader() {
           About Me
         </Badge>
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl mb-6">
-          Muhammad{' '}
-          <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            Fiaz
+          <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent uppercase">
+            {siteConfig.author}
           </span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">

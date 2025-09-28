@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { siteConfig } from '@/config/site.config';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Announcement, AnnouncementTitle ,AnnouncementTag} from '@/components/ui/announcement';
+import { Announcement, AnnouncementTitle, AnnouncementTag } from '@/components/ui/announcement';
 import { ArrowRight, Zap } from 'lucide-react';
 import { ArrowUpRightIcon } from 'lucide-react';
 
@@ -39,9 +39,9 @@ export function HeroSection() {
               themed
               className="mx-auto flex items-center justify-center w-fit max-w-full text-xs sm:text-sm md:text-base px-4 py-1.5 border border-border dark:border-secondary"
             >
-              <AnnouncementTag className="truncate">Latest update</AnnouncementTag>
+              <AnnouncementTag className="truncate">Welcome,</AnnouncementTag>
               <AnnouncementTitle className="flex items-center gap-2">
-                New Portfolio V4 🎉
+                My Portfolio 🎉
                 <ArrowUpRightIcon className="shrink-0 text-muted-foreground" size={16} />
               </AnnouncementTitle>
             </Announcement>
@@ -49,11 +49,11 @@ export function HeroSection() {
           {/* Main Heading - show name and description from config */}
           <div className="space-y-4 sm:space-y-6">
             <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[8rem] font-extrabold tracking-tight leading-none">
-                <span className="block">{siteConfig.siteName}</span>
+              <span className="block">{siteConfig.author}</span>
             </h1>
-              <p className="mx-auto max-w-2xl sm:max-w-3xl text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-muted-foreground leading-relaxed px-4 sm:px-0">
-                I Build Next-Generation Technologies
-              </p>
+            <p className="mx-auto max-w-2xl sm:max-w-3xl text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-muted-foreground leading-relaxed px-4 sm:px-0">
+              I Build Next-Generation Technologies
+            </p>
 
           </div>
           {/* CTA Buttons */}

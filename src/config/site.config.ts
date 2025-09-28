@@ -24,7 +24,7 @@ export interface SiteConfig {
   ogImage: string;
   twitterHandle: string;
   author: string;
-  author_img:string;
+  author_img: string;
 
   theme: {
     default: 'light' | 'dark';
@@ -40,31 +40,31 @@ export interface SiteConfig {
   social: SocialLink[];
   navigation: NavItem[];
   seo: {
-  title: string;
-  description: string;
-  keywords: string[];
-  canonical?: string;
-  image?: string; // default og image
-  imageAlt?: string;
-  locale?: string;
-  type?: string;
-  twitterCard?: string;
-  robots?: string;
-  themeColor?: string;
+    title: string;
+    description: string;
+    keywords: string[];
+    canonical?: string;
+    image?: string; // default og image
+    imageAlt?: string;
+    locale?: string;
+    type?: string;
+    twitterCard?: string;
+    robots?: string;
+    themeColor?: string;
   };
 
 }
 
 export const siteConfig: SiteConfig = {
-  siteName: 'Muhammad Fiaz',
-  domain: 'muhammadfiaz.com',
-  author: 'Muhammad Fiaz',
+  siteName: 'Mahesora',
+  domain: 'mahesora.id',
+  author: 'Okky Maheswara',
   description: 'Full Stack developer creating useful & delightful web experiences. Exploring ML & AI.',
   about:
     'I am a Full Stack developer who loves creating new things. I spend my spare time building free apps & tools, and I am currently diving into Machine Learning & AI to expand my problem‑solving toolkit. Always open to collaboration & new challenges.',
-    author_img: 'https://avatars.githubusercontent.com/u/75434191?v=4',
-    keywords: [
-    'Muhammad Fiaz',
+  author_img: 'https://avatars.githubusercontent.com/u/47545776?v=4',
+  keywords: [
+    'Okky Maheswara',
     'Full Stack Developer',
     'Portfolio',
     'Next.js',
@@ -76,24 +76,24 @@ export const siteConfig: SiteConfig = {
     'AI'
   ],
   ogImage: '/og.png',
-  twitterHandle: '@muhammadfiaz_',
+  twitterHandle: '@okkymhwr',
 
   theme: {
     default: 'dark',
     allowSystem: true,
   },
   links: {
-    website: 'https://muhammadfiaz.com',
-    github: 'https://github.com/muhammad-fiaz',
-    linkedin: 'https://www.linkedin.com/feed/',
+    website: 'https://mahesora.id',
+    github: 'https://github.com/putuokky',
+    linkedin: 'https://www.linkedin.com/in/okkymahesora/',
     tips: 'https://pay.muhammadfiaz.com',
-    email: 'mailto:contact@muhammadfiaz.com',
+    email: 'mailto:admin@mahesora.id',
   },
   social: [
-    { label: 'GitHub', url: 'https://github.com/muhammad-fiaz', icon: 'github' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/feed/', icon: 'linkedin' },
-    { label: 'Website', url: 'https://muhammadfiaz.com', icon: 'globe' },
-    { label: 'Tip', url: 'https://pay.muhammadfiaz.com', icon: 'coffee' },
+    { label: 'GitHub', url: 'https://github.com/putuokky', icon: 'github' },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/okkymahesora/', icon: 'linkedin' },
+    { label: 'Website', url: 'https://mahesora.id', icon: 'globe' },
+    // { label: 'Tip', url: 'https://pay.muhammadfiaz.com', icon: 'coffee' },
   ],
   navigation: [
     { label: 'Home', href: '/' },
@@ -104,12 +104,12 @@ export const siteConfig: SiteConfig = {
     { label: 'Contact', href: '/contact' }
   ],
 
-  
+
   seo: {
-    title: 'Muhammad Fiaz',
+    title: 'Okky Maheswara',
     description: 'Full Stack developer creating useful & delightful web experiences. Exploring ML & AI.',
     keywords: [
-      'Muhammad Fiaz',
+      'Okky Maheswara',
       'Full Stack Developer',
       'Portfolio',
       'Next.js',
@@ -120,9 +120,9 @@ export const siteConfig: SiteConfig = {
       'Machine Learning',
       'AI'
     ],
-    canonical: 'https://muhammadfiaz.com',
+    canonical: 'https://mahesora.id',
     image: '/og.png',
-    imageAlt: "Muhammad Fiaz - Full Stack Developer",
+    imageAlt: "Okky Maheswara - Full Stack Developer",
     locale: 'en-US',
     type: 'website',
     twitterCard: 'summary_large_image',
