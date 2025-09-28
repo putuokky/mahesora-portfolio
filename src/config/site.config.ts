@@ -90,17 +90,18 @@ export const siteConfig: SiteConfig = {
     email: 'mailto:admin@mahesora.id',
   },
   social: [
+    { label: 'Facebook', url: 'https://www.facebook.com/okkymahesora', icon: 'facebook' },
+    { label: 'Instagram', url: 'https://instagram.com/okkymahesora', icon: 'instagram' },
     { label: 'GitHub', url: 'https://github.com/putuokky', icon: 'github' },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/okkymahesora/', icon: 'linkedin' },
-    { label: 'Website', url: 'https://mahesora.id', icon: 'globe' },
-    // { label: 'Tip', url: 'https://pay.muhammadfiaz.com', icon: 'coffee' },
+    { label: 'Short Link', url: 'https://s.id/mahesora', icon: 'url' },
   ],
   navigation: [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Posts', href: '/posts' },
-    { label: 'Chat', href: '/chat' },
+    // { label: 'Projects', href: '/projects' },
+    // { label: 'Posts', href: '/posts' },
+    // { label: 'Chat', href: '/chat' },
     { label: 'Contact', href: '/contact' }
   ],
 

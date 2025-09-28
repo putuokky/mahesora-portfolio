@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Announcement, AnnouncementTitle, AnnouncementTag } from '@/components/ui/announcement';
 import { ArrowRight, Zap } from 'lucide-react';
-import { ArrowUpRightIcon } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export function HeroSection() {
 
@@ -42,7 +42,7 @@ export function HeroSection() {
               <AnnouncementTag className="truncate">Welcome,</AnnouncementTag>
               <AnnouncementTitle className="flex items-center gap-2">
                 My Portfolio 🎉
-                <ArrowUpRightIcon className="shrink-0 text-muted-foreground" size={16} />
+                <ArrowUpRight className="shrink-0 text-muted-foreground" size={16} />
               </AnnouncementTitle>
             </Announcement>
           </motion.div>
