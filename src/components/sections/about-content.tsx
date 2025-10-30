@@ -36,13 +36,22 @@ export function AboutContent() {
         </CardHeader>
         <CardContent className="space-y-4 relative z-10">
           <p className="text-muted-foreground leading-relaxed">
-            Hi, I&apos;m {siteConfig.author}—a passionate full-stack developer and SaaS enthusiast dedicated to building modern, scalable web applications. With a strong foundation in TypeScript, React, and Next.js, I thrive on transforming ideas into beautiful, performant products that delight users and drive business growth.
+            Hi, I&apos;m {siteConfig.author}—a passionate Full Stack Developer and SaaS enthusiast dedicated to building modern, scalable web applications.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            My journey in tech began with a curiosity for how things work and a drive to solve real-world problems. Over the years, I&apos;ve collaborated with startups and global teams, delivering robust solutions in e-commerce, productivity, and developer tooling. I believe in clean code, thoughtful design, and continuous learning.
+            With a strong foundation in TypeScript, React, Next.js, and Laravel 11, I specialize in transforming ideas into beautiful, performant products that delight users and drive business growth.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            When I&apos;m not coding, you&apos;ll find me exploring new frameworks, contributing to open source, or sharing insights with the developer community. Let&apos;s connect and build something amazing together!
+            My journey in tech began with a curiosity about how things work and a desire to solve real-world problems. Over the years, I&apos;ve collaborated with startups and global teams, delivering robust solutions across e-commerce, productivity, and developer tooling.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            I believe in clean code, thoughtful design, and continuous learning — principles that guide every project I take on.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            When I&apos;m not coding, you&apos;ll find me exploring new frameworks, contributing to open source, or sharing insights with the developer community.
+          </p>
+          <p className="text-muted-foreground leading-relaxed font-bold">
+            Let&apos;s connect and build something amazing together!
           </p>
         </CardContent>
       </Card>
