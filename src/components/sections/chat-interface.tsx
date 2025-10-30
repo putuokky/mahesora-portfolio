@@ -1,14 +1,11 @@
 "use client";
-import Image from 'next/image';
 
 import { BetterAuthSignIn } from './better-auth-signin';
-import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { MessageCircle } from 'lucide-react';
 import Link from 'next/link';
-import { useSession } from '@/lib/auth-client';
 import { siteConfig } from '@/config/site.config';
 
 
@@ -22,39 +19,6 @@ export type Message = {
 };
 
 export function ChatInterface() {
-  const { data } = useSession();
-  const user = data?.user?.name || null;
-  const [messages, setMessages] = useState<Message[]>([]);
-  const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    if (!user) return;
-    fetch(`/api/chat?user=${user}`)
-      .then(res => res.json())
-      .then(data => setMessages(data.messages || []));
-  }, [user]);
-
-  const handleSend = async () => {
-    if (!input.trim() || !user) return;
-    setLoading(true);
-    const newMsg: Message = {
-      sender: 'user',
-      name: 'You',
-      avatar: '/avatar-user.png',
-      content: input,
-      time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-    };
-    await fetch('/api/chat', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ user, message: newMsg }),
-    });
-    setMessages(prev => [...prev, newMsg]);
-    setInput('');
-    setLoading(false);
-  };
-
   return (
     <div className="space-y-8">
       <motion.div
