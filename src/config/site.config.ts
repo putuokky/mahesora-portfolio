@@ -141,7 +141,7 @@ export function buildMetadata(overrides: Partial<Metadata> = {}): Metadata {
   const { seo, siteName, domain } = siteConfig;
 
   const base: Metadata = {
-    title: seo.title,
+    title: seo.imageAlt,
     description: seo.description,
     keywords: seo.keywords,
     authors: [{ name: siteConfig.author, url: siteConfig.links.website }],
