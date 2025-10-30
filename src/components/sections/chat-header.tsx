@@ -2,7 +2,8 @@
 
 import { motion } from 'motion/react';
 import { Badge } from '@/components/ui/badge';
-import { MessageCircle, Lock, Github } from 'lucide-react';
+import { MessageCircle, Lock } from 'lucide-react';
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export function ChatHeader() {
   return (
@@ -23,11 +24,10 @@ export function ChatHeader() {
           </span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Have a private 1:1 conversation with me through GitHub Discussions. 
-          Sign in with your GitHub account to get started. All conversations are private and secure.
+          Have a private 1:1 conversation with me through WhatsApp. Click the button below to start chatting. All conversations are private and secure.
         </p>
       </motion.div>
-      
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -39,8 +39,8 @@ export function ChatHeader() {
           <span>Private & Secure</span>
         </div>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
-          <Github className="h-4 w-4" />
-          <span>GitHub Authentication</span>
+          <WhatsAppIcon className="h-4 w-4 text-green-500" />
+          <span>WhatsApp</span>
         </div>
       </motion.div>
     </div>

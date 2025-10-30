@@ -23,7 +23,7 @@ export function AboutHeader() {
           </span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Full Stack Developer passionate about crafting innovative web solutions that bridge complex technology and intuitive user experiences — specializing in Laravel 11 and WordPress development.
+          {siteConfig.about}
         </p>
       </motion.div>
     </div>

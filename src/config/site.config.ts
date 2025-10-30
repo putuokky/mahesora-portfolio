@@ -34,7 +34,7 @@ export interface SiteConfig {
     website: string;
     github: string;
     linkedin: string;
-    tips: string;
+    // tips: string;
     email: string;
   };
   social: SocialLink[];
@@ -59,9 +59,9 @@ export const siteConfig: SiteConfig = {
   siteName: 'Mahesora',
   domain: 'mahesora.id',
   author: 'Okky Maheswara',
-  description: 'Full Stack developer creating useful & delightful web experiences. Exploring ML & AI.',
+  description: 'Full Stack Developer crafting useful & delightful web experiences with Laravel and WordPress.',
   about:
-    'I am a Full Stack developer who loves creating new things. I spend my spare time building free apps & tools, and I am currently diving into Machine Learning & AI to expand my problem‑solving toolkit. Always open to collaboration & new challenges.',
+    "I'm a Full Stack Developer who loves creating new things and bringing ideas to life through clean, scalable code. I specialize in Laravel, WordPress, and modern JavaScript frameworks, building web applications that are both powerful and user-friendly. Always open to collaboration and new challenges.",
   author_img: 'https://avatars.githubusercontent.com/u/47545776?v=4',
   keywords: [
     'Okky Maheswara',
@@ -73,7 +73,9 @@ export const siteConfig: SiteConfig = {
     'shadcn/ui',
     'Framer Motion',
     'Machine Learning',
-    'AI'
+    'AI',
+    'Laravel',
+    'WordPress'
   ],
   ogImage: '/og.png',
   twitterHandle: '@okkymhwr',
@@ -86,7 +88,7 @@ export const siteConfig: SiteConfig = {
     website: 'https://mahesora.id',
     github: 'https://github.com/putuokky',
     linkedin: 'https://www.linkedin.com/in/okkymahesora/',
-    tips: 'https://pay.muhammadfiaz.com',
+    // tips: 'https://pay.muhammadfiaz.com',
     email: 'mailto:okkymahes@gmail.com',
   },
   social: [
@@ -101,14 +103,14 @@ export const siteConfig: SiteConfig = {
     { label: 'About', href: '/about' },
     // { label: 'Projects', href: '/projects' },
     // { label: 'Posts', href: '/posts' },
-    // { label: 'Chat', href: '/chat' },
+    { label: 'Chat', href: '/chat' },
     { label: 'Contact', href: '/contact' }
   ],
 
 
   seo: {
     title: 'Okky Maheswara',
-    description: 'Full Stack developer creating useful & delightful web experiences. Exploring ML & AI.',
+    description: 'Full Stack Developer crafting useful & delightful web experiences with Laravel and WordPress.',
     keywords: [
       'Okky Maheswara',
       'Full Stack Developer',
@@ -119,7 +121,9 @@ export const siteConfig: SiteConfig = {
       'shadcn/ui',
       'Framer Motion',
       'Machine Learning',
-      'AI'
+      'AI',
+      'Laravel',
+      'WordPress'
     ],
     canonical: 'https://mahesora.id',
     image: '/og.png',

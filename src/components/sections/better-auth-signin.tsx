@@ -1,18 +1,24 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { Github } from 'lucide-react';
-import { signIn } from '@/lib/auth-client';
-
+import WhatsAppIcon from '../icons/WhatsAppIcon';
 
 export function BetterAuthSignIn() {
+  const phone = '6285738209427'; // ganti nomor tujuan
+  const message = encodeURIComponent('Hello, I would like to discuss.');
+
   return (
     <div className="flex flex-col items-center gap-2 py-6">
-  <Button onClick={() => signIn.social({ provider: 'github' })} variant="outline" size="lg" className="gap-2">
-        <Github className="h-5 w-5" />
-        Sign in with GitHub
+      <Button
+        onClick={() => window.open(`https://wa.me/${phone}?text=${message}`, '_blank')}
+        variant="outline"
+        size="lg"
+        className="gap-2"
+      >
+        <WhatsAppIcon className="h-4 w-4 text-green-500" />
+        Chat via WhatsApp
       </Button>
-      <span className="text-xs text-muted-foreground">Powered by Better Auth</span>
+      <span className="text-xs text-muted-foreground">Connect via WhatsApp</span>
     </div>
   );
 }
